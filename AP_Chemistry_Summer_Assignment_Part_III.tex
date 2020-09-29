@@ -1,0 +1,1412 @@
+\documentclass[11pt]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{answers}
+\usepackage{lastpage}
+\usepackage{datetime}
+\usepackage{titlesec}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{evan}[fancy, sexy, hdr, colorsec]
+\usepackage[dvipsnames]{xcolor}
+\usepackage[margin = 0.75in, letterpaper, portrait]{geometry}
+\usepackage[version = 3.9]{mhchem}
+
+\everymath{\displaystyle}
+
+\pagestyle{fancy}
+\rhead{Last Updated: \today\ \currenttime\ UTC}
+\lhead{AP Chemistry Summer Assignment Part III}
+\cfoot{Page \thepage\ of \pageref*{LastPage}}
+\rfoot{\copyright\ $2020$ Rajeev Atla}
+
+\renewcommand*\contentsname{\S Table of Contents}
+
+\makeindex
+
+\Newassociation{hint}{hintitem}{all-hints}
+\renewcommand{\solutionextension}{out}
+\renewenvironment{hintitem}[1]{\item[\bf #1.]}{}
+
+\begin{document}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\color{red}\S \thesection}{0.5em}{}
+\titleformat{\subsection}{\normalfont\Large\bfseries}{\color{olive}\S \thesubsection}{0.5em}{}
+\titleformat{\subsubsection}{\normalfont\Large\bfseries}{\color{blue}\S \thesubsubsection}{0.5em}{}
+
+\begin{center}
+    \Large \textbf{AP Chemistry Summer Assignment Part III}
+\end{center}
+\begin{center}
+    \Large Rajeev Atla
+\end{center}
+
+Some beginning notes:
+\begin{itemize}
+    \item For personal use only
+    \item Feel free to contact me ASAP at \href{mailto:rajeev@rajeevatla.com}{rajeev@rajeevatla.com} if there's anything wrong/confusing
+    \item Due date: \textbf{First Day of School - 9/3}
+    \item Some notation:
+    \begin{itemize}
+        \item $V$ is volume
+        \item $r$ is radius
+        \item $m$ is mass
+        \item $\rho$ is density
+        \item $\delta$ (delta) is error
+        \item $n$ is moles
+        \item $M$ is molar mass
+    \end{itemize}
+    \item \href{https://www.jpsaos.com/pittenger/APSummerReviewproblems.pdf}{See the original assignment on Mrs. Pittenger's website}
+    \item For some help in chemistry, see your teacher, your textbook, or your local Science National Honor Society (SNHS) chapter
+    \item Speaking of textbooks, the one used in this class was Zumdahl's \textit{Chemistry}
+    \item \href{https://ptable.com}{Ptable} was used as the periodic table throughout this assignment
+\end{itemize}
+
+\newpage
+\tableofcontents
+
+\newpage
+
+
+\section{Problem Set 1 - Math Basics}
+
+\subsection{Problem 1}
+How many significant figures are in each of the following?
+
+\subsubsection{a}
+\boxed{\text{$12$ has $2$ significant figures.}}
+
+\subsubsection{b}
+\boxed{\text{$10980$ has $4$ significant figures.}}
+
+\subsubsection{c}
+\boxed{\text{$2001$ has $4$ significant figures.}}
+
+\subsubsection{d}
+\boxed{\text{\(2.001 \times 10^3\) has $4$ significant figures.}}
+
+\subsubsection{e}
+\boxed{\text{$0.0000101$ has $3$ significant figures.}}
+
+\subsubsection{f}
+\boxed{\text{$1.01 \times 10^{-5}$ has $3$ significant figures.}}
+
+\subsubsection{g}
+\boxed{\text{$1000.$ has $4$ significant figures.}}
+
+\subsubsection{h}
+\boxed{\text{pH $2.1$ has $1$ significant figure.}}
+
+\subsection{Problem 2}
+Use scientific notation to express the number 480 to $\dots$
+
+\subsubsection{(a) 1 Significant Figure}
+
+\boxed{5 \times 10^2}
+
+\subsubsection{(b) 2 Significant Figures}
+
+\boxed{4.8 \times 10^2}
+
+\subsubsection{(c) 3 Significant Figures}
+
+\boxed{4.80 \times 10^2}
+
+\subsubsection{(d) 4 Significant Figures}
+
+\boxed{4.800 \times 10^2}
+
+\newpage
+\subsection{Problem 3}
+
+ Perform the following mathematical operations and express each result to the correct number of significant
+figures.
+
+\subsubsection{(a)}
+
+\begin{align*}
+    97.381 \div 4.2502 + 0.99195 &= 22.912 + 0.99195 \\
+    &= \boxed{23.904} \\
+\end{align*}
+
+\subsubsection{(b)}
+
+\begin{align*}
+    171.5 + 72.915 - 8.23 &= \boxed{236.2} \\
+\end{align*}
+
+\subsubsection{(c)}
+
+\begin{align*}
+    1.00914 \div 0.87104 + 1.2012 &= 1.1585 + 1.2012\\
+    &= \boxed{2.3597}
+\end{align*}
+
+\subsubsection{(d)}
+
+\begin{align*}
+    21.901 - 13.21 - 4.0215 &= \boxed{4.67}
+\end{align*}
+
+\newpage
+\subsection{Problem 4}
+ Perform the following mathematical operations and express each result to the correct number of significant
+figures.
+
+\subsubsection{(a)}
+
+\begin{align*}
+    \left (0.102 \times 0.0821 \times 273 \right) \div 1.01 &= 2.29 \div 1.01 \\
+    &= \boxed{2.27} \\
+\end{align*}
+
+\subsubsection{(b)}
+
+\begin{align*}
+    0.14 \times \left (6.022 \times 10^{23} \right) &= 0.84 \times 10^{23} \\
+    &= \boxed{8.4 \times 10^{22}} \\
+\end{align*}
+
+\subsubsection{(c)}
+
+\begin{align*}
+    \left (4.0 \times 10^4 \right) \times \left (5.021 \times 10^{-3} \right) \times \left (7.34993 \times 10^{2} \right) &= 150 \times 10^{3} \\
+    &= \boxed{1.5 \times 10^{5}}
+\end{align*}
+
+\subsubsection{(d)}
+
+\begin{align*}
+    \left (2.00 \times 10^{6} \right) \div \left (3.00 \times 10^{-7} \right) &= 0.667 \times 10^{13} \\
+    &= \boxed{6.67 \times 10^{12}} \\
+\end{align*}
+
+\subsubsection{(e)}
+
+\begin{align*}
+    4.184 \times 100.62 \times \left(25.27 -24.16 \right) &= 421.0 \times 1.11 \\
+    &= \boxed{467} \\
+\end{align*}
+
+\subsubsection{(f)}
+
+\begin{align*}
+    \left [ \left (8.925 - 8.904 \right) \div 8925 \right] \times 100 &= \left (0.021 \div 8925 \right) \times 100 \\
+    &= \boxed{2.4 \times 10^{-4}}
+\end{align*}
+
+\subsubsection{(g)}
+
+\begin{align*}
+    \left (9.04 + 8.23 + 21.954 + 81.0 \right) \div 3.1416 &= 120.2 \div 3.1416 \\
+    &= \boxed{38.26} \\
+\end{align*}
+
+\subsubsection{(h)}
+
+\begin{align*}
+    \left (9.2 \times 100.65 \right) \div \left (8.321 + 4.026 \right) &= 930 \div 12.347 \\
+    &= \boxed{75} \\
+\end{align*}
+
+\subsubsection{(i)}
+
+\begin{align*}
+    0.6154 + 2.07 - 2.114 &= \boxed{0.57} \\
+\end{align*}
+
+\subsubsection{(j)}
+
+\begin{align*}
+    8.27 \left (4.987 - 4.962 \right) &= 8.27 \times 0.025 \\
+    &= \boxed{0.21} \\
+\end{align*}
+
+\subsubsection{(k)}
+
+Note that $4$ is exact because we are taking an average here.
+
+\begin{align*}
+    \left (9.5 + 4.1 + 2.8 + 3.175 \right) \div 4 &= 19.6 \div 4 \\
+    &= \boxed{4.90} \\
+\end{align*}
+
+\subsubsection{(l)}
+100 is exact here.
+
+\begin{align*}
+    \left [ \left (9.025 - 9.024 \right) \div 9.025 \right] \times 100 &= \left (0.001 \div 9.025 \right) \times 100 \\
+    &= \boxed{0.01} \\
+\end{align*}
+
+\subsection{Problem 5}
+The density of aluminum is $2.70\ \frac{\text{g}}{\text{cm}^3}$.
+Express this value in units of kilograms per cubic meter and pounds per cubic foot.
+
+\begin{align*}
+    2.70\ \frac{\text{g}}{\text{cm}^3} \times \frac{1\ \text{kg}}{1000\ \text{g}} \times \left (\frac{100 \ \text{cm}}{1\ \text{m}} \right)^3 &= \boxed{2700\ \frac{\text{kg}}{\text{m}^3}} \\
+\end{align*}
+
+\begin{align*}
+    2.70\ \frac{\text{g}}{\text{cm}^3} \times  \frac{1\ \text{lb}}{453.59237\ \text{g}} \times \left ( 30.48\ \frac{\text{cm}}{\text{ft}} \right)^3 &= \boxed{169\ \frac{\text{lbs}}{\text{ft}}}
+\end{align*}
+
+\newpage
+\subsection{Problem 6}
+ A material will float on the surface of a liquid if the material has a density less than that of the liquid.
+ Given that the density of water is approximately $1.0 \frac{\text{g}}{\text{mL}}$, will a block of material having a volume of $1.2 \times 10^4 \ \text{in}^3$ and weighing $350$ lbs float or sink when placed in a reservoir of water?
+
+
+\noindent First we find the density:
+\begin{align*}
+    \frac{350\ \text{lbs}}{1.2 \times 10^{4}\ \text{in}^3} &= 0.029\ \frac{\text{lbs}}{\text{in}^3} \\
+    &= \left ( 0.029\ \frac{\text{lbs}}{\text{in}^3} \right) \times \left (453.59237\ \frac{\text{g}}{\text{lbs}} \right)  \times \left (0.0610237\ \frac{\text{in}^3}{\text{mL}} \right) \\
+    &= \boxed{0.80\ \frac{\text{g}}{\text{mL}}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 7}
+A star is estimated to have a mass of $2 \times 10^{36}\ \text{kg}$.
+Assuming it to be a sphere of average radius $7.0 \times 10^{5} \ \text{km}$, calculate the average density of the star in units of grams per cubic centimeter.
+
+
+\noindent It's actually easier here to convert first, then do the math.
+\begin{align*}
+    m &= 2 \times 10^{36}\ \text{kg} = 2 \times 10^{39}\ \text{g} \\
+    r &= 7.0 \times 10^{5}\ \text{km} = 7.0 \times 10^{10}\ \text{cm} \\
+\end{align*}
+
+\begin{align*}
+    \rho &= \frac{m}{V} \\
+    &= \frac{m}{\frac{4}{3} \pi r^3} \\
+    &= \frac{3m}{4 \pi r^3} \\
+    &= \frac{3 \left (2 \times 10^{39}\ \text{g} \right)}{4 \pi \left (7.0 \times 10^{10}\ \text{cm} \right)^3} \\
+    &= \boxed{1 \times 10^{6}\ \frac{\text{g}}{\text{cm}^3}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 8}
+
+A rectangular block has dimensions $2.9\ \text{cm} \times 3.5\ \text{cm} \times 10.0\ \text{cm}$.
+The mass of the block is $615.0\ \text{g}$.
+What are the volume and density of the block?
+
+\begin{align*}
+    V &= 2.9\ \text{cm} \times 3.5\ \text{cm} \times 10.0\ \text{cm} = \boxed{1.0 \times 10^{2}\ \text{cm}^3} \\
+    \rho &= \frac{ 615.0 \ \text{g} }{100\ \text{cm}^3} = \boxed{6.2\ \frac{\text{g}}{\text{cm}^3}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 9}
+Calculate the error percentage for each case:
+
+\subsubsection{(a)}
+The density of an aluminum block determined in experiment was $2.64\ \frac{\text{g}}{\text{cm}^3}$. The true value is $2.70\ \frac{\text{g}}{\text{cm}^3}$.
+
+\begin{align*}
+    \delta &= 100 \times \frac{\left |\rho_{\text{expected}} - \rho_{\text{actual}} \right| }{\rho_{\text{expected}}} \\
+    &= 100 \times \frac{0.06}{2.70} \\
+    &= \boxed{2.2\ \%} \\
+\end{align*}
+
+\subsubsection{(b)}
+The experimental determination of iron in a sample of iron ore was $16.48\ \%$.
+The true value was $16.12\ \%$.
+
+\begin{align*}
+    \delta &= 100 \times \frac{16.48-16.12}{16.12} \\
+    &= 100 \times \frac{0.36}{16.12} \\
+    &= \boxed{2.2\ \%} \\
+\end{align*}
+
+\newpage
+\section{Problem Set 2 - Atoms, Ions, and Compounds}
+\subsection{Problem 1}
+You have a chemical in a sealed glass container filled with air. The system has a mass of $250.0\ \text{g}$. The
+chemical is ignited by means of a magnifying glass focusing sunlight on the reactant. After the chemical
+is completely burned, what is the mass of the setup? Explain your answer.
+
+\noindent \boxed{250.0\ \text{g}}
+Since the container is sealed, no matter can leave or enter the setup.
+Hence, the final mass is the same as the initial mass.
+
+\newpage
+\subsection{Problem 2}
+Find the empirical and molecular formulas of the following compounds.
+
+\subsubsection{(a)}
+$73.8 \%$ carbon, $8.7\ \%$ hydrogen, $17.5\ \%$ nitrogen, molar mass $166.0\ \frac{\text{g}}{\text{mol}}$
+
+\noindent First, we assume that we are looking at a $100\ \text{g}$ sample, and so the percentages are equal to the mass in grams.
+Next, we convert to moles.
+\begin{align*}
+    n_{\text{C}} &= \left ( 73.8\ \text{g} \right) \times \left ( \frac{1\ \text{mol}}{12.011\ \text{g}} \right) \\
+    &= 6.14\ \text{mol} \\
+    n_{\text{H}} &= \left ( 8.7\ \text{g} \right) \times \left ( \frac{1\ \text{mol}}{1.008\ \text{g}} \right) \\
+    &= 8.6\ \text{mol} \\
+    n_{\text{N}} &= \left ( 17.5\ \text{g} \right) \times \left ( \frac{1\ \text{mol}}{14.007\ \text{g}} \right) \\
+    &= 1.25\ \text{mol} \\
+\end{align*}
+Next, we find the \textit{relative} molar values $N_i$ by dividing by the least number of moles, which in this case is $n_{\text{N}}$.
+
+\begin{align*}
+    N_{\text{C}} &\Rightarrow \frac{6.14\ \text{mol}}{1.25\ \text{mol}} = 4.91 \approx 5\\
+    N_{\text{H}} &\Rightarrow \frac{8.6\ \text{mol}}{1.25\ \text{mol}} = 6.9 \approx 7 \\
+    N_{\text{N}} &\Rightarrow \frac{1.25\ \text{mol}}{1.25\ \text{mol}} = 1 \\
+\end{align*}
+
+The empirical formula is then \boxed{\text{C}_5\, \text{H}_7\, \text{N}}.
+The molar mass of the empirical molecule is
+
+\begin{align*}
+    M_{\text{e}} &= 5 \left ( \frac{12.011\ \text{g}}{\text{mol}} \right) + 7 \left ( \frac{1.008\ \text{g}}{\text{mol}} \right) + \left ( \frac{14.007\ \text{g}}{\text{mol}} \right) \\
+    &= \left ( \frac{60.055\ \text{g}}{\text{mol}} \right) + \left ( \frac{7.056\ \text{g}}{\text{mol}} \right) + \left (\frac{14.007\ \text{g}}{\text{mol}} \right) \\
+    &= 81.118\ \frac{\text{g}}{\text{mol}}\\
+\end{align*}
+The scaling factor to the molecular formula is then
+$$\frac{81.118\ \frac{\text{g}}{\text{mol}}}{166.0\ \frac{\text{g}}{\text{mol}}} = 0.4887 \approx 0.5$$
+This indicates that the empirical formula's coefficients need to be doubled to get the molecular formula.
+The molecular formula is then \boxed{\text{C}_{10} \text{H}_{14} \text{N}_{2}}, meaning this compound is likely anabasine.
+
+\subsubsection{(b)}
+$80.0\ \%$ Carbon, $20.0\ \%$ Hydrogen, $30.0\ \frac{\text{g}}{\text{mol}}$ Molar mass
+
+We start by assuming that we have a $100$ gram sample, so we just need to consider $80.0\ \text{g}$ Carbon and $20.0\ \text{g}$ Hydrogen.
+Converting to moles,
+\begin{align*}
+    n_{\text{C}} = \left ( 80.0\ \text{g C} \right) \left (\frac{1\ \text{mol C}}{12.0107\ \text{g C}} \right) &= 6.66\ \text{mol C} \\
+    n_{\text{H}} = \left (20.0\ \text{g H} \right ) \left ( \frac{1\ \text{mol H}}{1.00784\ \text{g H}} \right) &= 19.8\ \text{mol H}
+\end{align*}
+Next we find the relative molar ratios.
+\begin{align*}
+    N_\text{C} &= \frac{6.66}{6.66} = 1 \\
+    N_{\text{H}} &= \frac{19.8}{6.66} = 2.97 \approx 3 \\
+\end{align*}
+This means that the empirical formula is \boxed{\text{CH}_3}.
+However, the molar mass of this empirical compound is
+\begin{align*}
+    M &= \left ( \frac{12.011\ \text{g} }{\text{mol}} \right) + 3 \left ( \frac{1.008\ \text{g}}{\text{mol}} \right) \\
+    &= \left ( \frac{12.011\ \text{g} }{\text{mol}} \right) + \left ( \frac{3.024\ \text{g}}{\text{mol}} \right) \\
+    &= 15.035\ \frac{ \text{g}}{\text{mol}} \\
+\end{align*}
+Since this is approximately half the molecular molar mass, we must multiply the empirical coefficients by $\frac{1}{\frac{1}{2}} = 2$ to get the molecular formula, which is \boxed{\text{C}_2 \text{H}_6}, meaning that this molecule is ethane.
+
+\newpage
+\subsection{Problem 3}
+In the periodic table, how many elements are found in \dots
+
+\subsubsection{(a)}
+the second period?
+
+\boxed{8}
+
+\subsubsection{(b)}
+the third period?
+
+\boxed{8}
+
+\subsubsection{(c)}
+group 2A?
+
+\boxed{6}
+
+\subsubsection{(d)}
+the oxygen family?
+
+\boxed{6}
+
+\subsubsection{(e)}
+the fourth period?
+
+\boxed{18}
+
+\subsubsection{(f)}
+the nickel group?
+
+\boxed{4}
+
+\subsubsection{(g)}
+group 8A?
+
+\boxed{4}
+
+\newpage
+\subsection{Problem 4}
+Give the number of protons and neutrons in each of the following atoms.
+
+\subsubsection{(a)}
+\ce{^{238}_{84} Pu}
+
+\boxed{84} protons and \boxed{154} neutrons
+
+\subsubsection{(b)}
+\ce{^{65}_{29} Cu}
+
+\boxed{29} protons and \boxed{36} neutrons
+
+\subsubsection{(c)}
+\ce{^{52}_{24} Cr}
+
+\boxed{24} protons and \boxed{28} neutrons
+
+\subsubsection{(d)}
+\ce{^{60}_{27} Co}
+
+\boxed{27} protons and \boxed{33} neutrons
+
+\subsubsection{(e)}
+\ce{^{52}_{24} Cr}
+
+\boxed{24} protons and \boxed{28} neutrons
+
+\subsubsection{(f)}
+\ce{^{4}_{2} He}
+
+\boxed{2} protons and \boxed{2} neutrons
+
+\newpage
+\subsection{Problem 5}
+Complete the following table:
+
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c||}
+        \hline
+        \hline
+        \textbf{Symbol} & \textbf{Protons} & \textbf{Neutrons} & \textbf{Electrons} & \textbf{Net charge}\\
+        \hline
+        \hline
+         & 33 & 42 & 30 & 3+ \\
+        \hline
+        \ce{^{128}_{52}Te^2-} &  &  & 54 &  \\
+        \hline
+        & 16 & 16 & 16 &  \\
+        \hline
+        & 81 & 123 &  & 1+ \\
+        \hline
+        \ce{^{195}_{78} Pt} &  &  &  &  \\
+        \hline
+        \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{||c|c|c|c|c||}
+        \hline
+        \hline
+        \textbf{Symbol} & \textbf{Protons} & \textbf{Neutrons} & \textbf{Electrons} & \textbf{Net charge}\\
+        \hline
+        \hline
+        \ce{^{75}_{33}As^3+} & 33 & 42 & 30 & 3+ \\
+        \hline
+        \ce{^{128}_{52}Te^2-} & 52 & 76 & 54 & 2- \\
+        \hline
+        \ce{^{32}_{16}S}& 16 & 16 & 16 & 0 \\
+        \hline
+        \ce{^{123}_{81}Tl^1+}& 81 & 123 & 80 & 1+ \\
+        \hline
+        \ce{^{195}_{78}Pt} & 78 & 117 & 78 & 0 \\
+        \hline
+        \hline
+    \end{tabular}
+\end{center}
+
+\newpage
+\subsection{Problem 6}
+Would you expect each of the following atoms to gain or lose electrons when forming ions?
+Which ion is most likely to form in each case?
+
+\subsubsection{(a) Ra}
+Radium is most likely to form \boxed{\ce{Ra^2+}}, thereby loosing 2 electrons.
+
+\subsubsection{(b) In}
+Indium is most likely to form \boxed{\ce{In^3+}}, thereby loosing 3 electrons.
+
+\subsubsection{(c) P}
+Phosphorus is most likely to form \boxed{\ce{P^3-}}, thereby gaining 3 electrons.
+
+\subsubsection{(d) Te}
+Tellurium is most likely to form \boxed{\ce{Te^2-}}, thereby gaining 2 electrons.
+
+\subsubsection{(e) Br}
+Bromine is most likely to form \boxed{\ce{Br^1-}}, thereby gaining 1 electron.
+
+\subsubsection{(f) Rb}
+Rubidium is most likely to form \boxed{\ce{Rb}^{1+}}, thereby loosing 1 electron.
+
+\newpage
+\subsection{Problem 7}
+Name each of the following compounds:
+
+\begin{center}
+        \begin{tabular}{||c|c|c||}
+         \hline
+         \hline
+         \textbf{Index} & \textbf{Formula} & \textbf{Name}\\
+         \hline
+         \hline
+         (a) & \ce{Rb_2O} & \\
+         \hline
+         (b) & \ce{AlI_3} & \\
+         \hline
+         (c) & \ce{FeBr_3} & \\
+         \hline
+         (d) & \ce{Hg_2O} & \\
+         \hline
+         (e) & \ce{CoS} & \\
+         \hline
+         (f) & \ce{TiCl_4} & \\
+         \hline
+         (g) & \ce{CrO_2} &  \\
+         \hline
+         (h) & \ce{Cr_2O_3} &  \\
+         \hline
+         (i) & \ce{NaH} &  \\
+         \hline
+         (j) & \ce{ZnCl_2} & \\
+         \hline
+         (k) & \ce{CsF} &  \\
+         \hline
+         (l) & \ce{Li_3N} &  \\
+         \hline
+         (m) & \ce{Ag_2S} &  \\
+         \hline
+         (n) & \ce{Sr_3P_2} &  \\
+         \hline
+         (o) & \ce{MnO_2} &  \\
+         \hline
+         \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+        \begin{tabular}{||c|c|c||}
+         \hline
+         \hline
+         \textbf{Index} & \textbf{Formula} & \textbf{Name}\\
+         \hline
+         \hline
+         (a) & \ce{Rb_2O} & Rubidium (I) oxide \\
+         \hline
+         (b) & \ce{AlI_3} & Aluminum iodide \\
+         \hline
+         (c) & \ce{FeBr_3} & Iron (III) bromide \\
+         \hline
+         (d) & \ce{Hg_2O} & Mercury (I) oxide\\
+         \hline
+         (e) & \ce{CoS} & Cobalt (II) sulfide\\
+         \hline
+         (f) & \ce{TiCl_4} & Titanium (IV) chloride\\
+         \hline
+         (g) & \ce{CrO_2} & Chromium (IV) oxide \\
+         \hline
+         (h) & \ce{Cr_2O_3} & Chromium (III) oxide \\
+         \hline
+         (i) & \ce{NaH} & Sodium hydride \\
+         \hline
+         (j) & \ce{ZnCl_2} & Zinc (II) chloride \\
+         \hline
+         (k) & \ce{CsF} & Caesium fluoride \\
+         \hline
+         (l) & \ce{Li_3N} & Lithium nitride \\
+         \hline
+         (m) & \ce{Ag_2S} & Silver (I) sulfide \\
+         \hline
+         (n) & \ce{Sr_3P_2} & Strontium phosphide \\
+         \hline
+         (o) & \ce{MnO_2} & Manganese (IV) oxide \\
+         \hline
+         \hline
+    \end{tabular}
+\end{center}
+
+
+\newpage
+\subsection{Problem 8}
+Write the formula for each of the following compounds:
+
+\begin{center}
+    \begin{tabular}{||c|c|c||c|c|c||}
+        \hline
+        \hline
+        \textbf{Index} & \textbf{Name} & \textbf{Formula} & \textbf{Index} & \textbf{Name} & \textbf{Formula} \\
+        \hline
+        \hline
+        (a) & Caesium bromide &  & (i) & Tin (II) fluoride & \\
+        \hline
+        (b) & Barium sulfate &  & (j) & Ammonium acetate &  \\
+        \hline
+        (c) & Chlorine monoxide &  & (k) & Mercury (I) chloride & \\
+        \hline
+        (d) & Ammonium chloride &  & (l) & Potassium cyanide &  \\
+        \hline
+        (e) & Silicon tetrachloride &  & (m) & Lead (IV) sulfide &  \\
+        \hline
+        (f) & Beryllium oxide &  & (n) & Lead (II) sulfide & \\
+        \hline
+        (g) & Sodium dihydrogen phosphate &  & (o) & Silicon tetrachloride & \\
+        \hline
+        (h) & Lithium nitride &  & (p) & Sodium peroxide &  \\
+        \hline
+        \hline
+    \end{tabular}
+\end{center}
+
+\begin{center}
+    \begin{tabular}{||c|c|c||c|c|c||}
+        \hline
+        \hline
+        \textbf{Index} & \textbf{Name} & \textbf{Formula} & \textbf{Index} & \textbf{Name} & \textbf{Formula} \\
+        \hline
+        \hline
+        (a) & Caesium bromide & \ce{Cs_3Br} & (i) & Tin (II) fluoride & \ce{SnF_2}\\
+        \hline
+        (b) & Barium sulfate & \ce{Ba(SO_4)} & (j) & Ammonium acetate & \ce{(NH_4)(C_2H_3O_2)} \\
+        \hline
+        (c) & Chlorine monoxide & \ce{ClO} & (k) & Mercury (I) chloride & \ce{HgCl}\\
+        \hline
+        (d) & Ammonium chloride & \ce{(NH_4)Cl} & (l) & Potassium cyanide & \ce{K(CN)} \\
+        \hline
+        (e) & Silicon tetrachloride & \ce{SiCl_4} & (m) & Lead (IV) sulfide & \ce{PbS_2} \\
+        \hline
+        (f) & Beryllium oxide & \ce{BaO} & (n) & Lead (II) sulfide & \ce{PbS}\\
+        \hline
+        (g) & Sodium dihydrogen phosphate & \ce{Na(H_2PO_4)} & (o) & Silicon tetrachloride & \ce{SiCl_4}\\
+        \hline
+        (h) & Lithium nitride & \ce{Li_3N} & (p) & Sodium peroxide & \ce{Na_2O_2} \\
+        \hline
+        \hline
+    \end{tabular}
+\end{center}
+
+\newpage
+\section{Problem Set 3 - Stoichiometry}
+\subsection{Problem 1}
+Naturally occurring sulfur consists of 4 isotopes, \ce{{}^32S} ($95 \%$), \ce{{}^33S} ($0.76 \%$), \ce{{}^34S} ($4.22 \%$), and \ce{{}^35S} (0.014 \%).
+Using this data, calculate the atomic weight of naturally occurring sulfur.
+The masses of the isotopes are given in the table below.
+
+\begin{center}
+    \begin{tabular}{cc}
+         \textbf{Isotope} & \textbf{Atomic Mass (amu)} \\
+         \ce{{}^32S} & $31.91$\\
+         \ce{{}^33S} & $32.97$ \\
+         \ce{{}^34S} & $33.97$ \\
+         \ce{{}^35S} & $35.97$ \\
+    \end{tabular}
+\end{center}
+We do a weighted sum to find the atomic weight.
+
+\begin{align*}
+    M &= \left (0.95 \right) \left ( 31.91 \right) + \left (0.0076 \right) \left (32.97 \right) + \left ( 0.0422 \right) \left (33.97 \right) + \left (0.00014 \right) \left (35.97 \right) \\
+    &= 30. + 0.25 + 1.43 + 0.0050 \\
+    &= \boxed{32} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 2}
+A noble gas consists of 3 isotopes of masses $19.99$ amu, $20.99$ amu, and $21.99$ amu.
+The relative abundance of these isotopes is $90.92\%$, $0.257\%$, and $8.82\%$, respectively.
+What is the average atomic mass of this noble gas?
+What element might this be?
+
+\begin{align*}
+    M &= \left ( 0.9092 \right ) \left ( 19.99\right) + \left (0.00257 \right) \left (20.99 \right) + \left ( 0.0882 \right) \left (21.99 \right) \\
+    &= 18.17 + 0.0539 + 1.94 \\
+    &= \boxed{20.16} \\
+\end{align*}
+
+Looking at the periodic table, it's easy to see that this element is likely \boxed{\text{Neon}}.
+
+\newpage
+\subsection{Problem 3}
+An element X has 5 major isotopes, listed below along with their relative abundances.
+What is this element?
+Does the mass you calculated based on these data agree with that listed on your periodic table?
+
+\begin{center}
+    \begin{tabular}{||c|c|c||}
+         \hline
+         \hline
+         \textbf{Isotope} & \textbf{\% Natural Abundance} & \textbf{Atomic Mass} \\
+         \hline
+         \hline
+         \ce{{}^46X} & $8.0\%$ & $45.95269$ \\
+         \hline
+         \ce{^47X} & $7.3\%$ & $46.951764$ \\
+         \hline
+         \ce{^48X} & $73.8\%$ & $47.947947$ \\
+         \hline
+         \ce{^49X} & $5.5\%$ & $48.947841$ \\
+         \hline
+         \ce{^50X} & $5.4\%$ & $49.944792$ \\
+         \hline
+         \hline
+    \end{tabular}
+\end{center}
+
+
+
+\newpage
+\subsection{Problem 4}
+How many moles are in $300$ atoms of nitrogen? How many grams?
+
+\noindent We convert to moles using Avagadro's number, after noting that nitrogen is diatomic.
+\begin{align*}
+    n &= \left ( \frac{150\ \text{molecules}\ \ce{N_2}}{1} \right) \times \left ( \frac{1\ \text{mol}\ \ce{N_2} }{6.022 \times 10^{23}\ \text{molecules}\ \ce{N_2} } \right) \\
+    &= \boxed{2.49 \times 10^{-22}\ \text{mol}\ \ce{N_2}} \\
+\end{align*}
+We next convert to grams using the molar mass of an \ce{N_2} molecule.
+
+\begin{align*}
+    m &= \left ( \frac{2.49 \times 10^{-22}\ \text{mol}\ \ce{N_2}}{1} \right) \times 2 \times \left ( \frac{14.0067\ \text{g}\ \ce{N_2}}{\text{mol}\ \ce{N_2}} \right) \\
+    &= \boxed{6.98 \times 10^{-21}\ \text{g}\ \ce{N_2}}
+\end{align*}
+
+\newpage
+\subsection{Problem 5}
+If you buy $38.9$ moles of M\&M's, how many M\&M's do you have?
+
+A mole of something is equivalent to $6.022 \times 10^{23} $ of the thing, so we simply multiply by this number to get \boxed{2.34 \times 10^{25}\ \text{M\&M's}}.
+
+\newpage
+\subsection{Problem 6}
+A sample of sulfur has a mass of $8.37$ grams.
+How many moles are in the sample?
+How many atoms?
+
+We divide by the molar mass of sulfur, which is 32.065 grams per mole, to get \boxed{$0.261$ moles}.
+Each mole contains $6.022 \times 10^{23}$ sulfur atoms, so the sample contains $\boxed{1.57 \times 10^{23}} $ sulfur atoms.
+
+\newpage
+\subsection{Problem 7}
+Give the number of moles of each elements present in 1.0 mole of each of the following substances?
+
+\subsubsection{(a)}
+\boxed{2} moles of \ce{Hg} and \boxed{2} moles of \ce{I}
+
+\subsubsection{(b)}
+\boxed{1} mole each of \ce{Li} and \ce{H}
+
+\subsubsection{(c)}
+\boxed{1} mole each of \ce{Pb} and \ce{C}, along with \boxed{3} moles of $O$
+
+\subsubsection{(d)}
+\boxed{2} moles of \ce{Ba} and \ce{As}, along with \boxed{8} moles of \ce{O}
+
+\subsubsection{(e)}
+\boxed{1} mole of \ce{Rb}, \boxed{3} moles of \ce{O}, and \boxed{5} moles of \ce{H}
+
+\subsubsection{(f)}
+\boxed{2} moles of \ce{H}, \boxed{1} mole of \ce{Si}, and \boxed{6} moles of \ce{F}
+
+\newpage
+\subsection{Problem 8}
+How many grams of zinc are in $1.16 \times 10^{22}$ atoms of zinc?
+
+\begin{align*}
+    m &= \left ( \frac{1.16\times 10^{22}\ \text{atoms}}{1} \right) \times \left ( \frac{1\ \text{mol}}{6.022 \times 10^{23}\  \text{atoms}} \right) \times \left ( \frac{65.38\ \text{g}}{1\ \text{mol}} \right) \\
+    &= \boxed{1.26\ \text{g}}
+\end{align*}
+
+\newpage
+\subsection{Problem 9}
+Calculate the molar masses of each of the following:
+\subsubsection{(a)}
+\ce{Cu_2SO_4}
+
+\begin{align*}
+    M &= 2 \left (63.546 \right) + 32.06 + 4 \left (15.999 \right) \\
+    &= 127.092 + 32.06 + 63.996 \\
+    &= \boxed{223.15} \\
+\end{align*}
+
+\subsubsection{(b)}
+\ce{NH_4 OH}
+
+\begin{align*}
+    M &= 14.007 + 15.999 + 5 \left (1.008 \right) \\
+    &= 14.007 + 15.999 + 5.04 \\
+    &= \boxed{35.046} \\
+\end{align*}
+
+\subsubsection{(c)}
+\ce{C_10H_16O}
+
+\begin{align*}
+    M &= 10 \left (12.011 \right) + 16 \left (1.008 \right) + 15.999 \\
+    &= 120.11 + 16.128 + 15.999 \\
+    &= \boxed{152.24}
+\end{align*}
+
+\subsubsection{(d)}
+\ce{Zr(SeO_3)_2}
+
+\begin{align*}
+    M &= 91.224 + 2 \left (78.971 \right) + 6 \left (15.999 \right) \\
+    &= 91.224 + 157.942 + 95.994 \\
+    &= \boxed{345.160} \\
+\end{align*}
+
+
+\subsubsection{(e)}
+\ce{Ca_2Fe(CN)_6 * 12 H_2 O}
+
+\begin{align*}
+    M &= 2 \left (40.078 \right) + 55.845 + 6 \left (12.011 \right) + 6 \left (14.007 \right) + 24 \left (1.008 \right) + 24 \left (15.999 \right) \\
+    &= 80.156 + 55.845 + 72.066 + 84.042 + 24.192 + 383.976 \\
+    &= \boxed{700.277} \\
+\end{align*}
+
+\subsubsection{(f)}
+
+\ce{Cr_4(P_2O_7)_3}
+
+\begin{align*}
+    M &= 4 \left (51.996 \right) + 6 \left (30.974 \right) + 21 \left (15.999 \right) \\
+    &= 207.984 + 185.844 + 335.979 \\
+    &= \boxed{729.807} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 10}
+What is the mass of $4.28 \times 10^{22}$ molecules of water?
+
+Water is \ce{H_2 O}, so we start by finding its molar mass.
+\begin{align*}
+    M &= 2 \left (1.008 \right) + 15.999 \\
+    &= 2.016 + 15.999 \\
+    &= 18.015 \\
+\end{align*}
+We can now do this computation:
+
+\begin{align*}
+     m &= \left ( 4.28 \times 10^{22}\ \text{molecules} \right) \times \left ( \frac{1\ \text{mol}}{6.022 \times 10^{23}\ \text{molecules}} \right) \times \left ( \frac{18.015\ \text{g}}{\text{mol}} \right) \\
+     &= \boxed{1.28\ \text{g}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 11}
+How many milligrams of \ce{Br_2} are in $4.8 \times 10^{20}$ molecules of \ce{Br_2}?
+
+\begin{align*}
+    m &= \left ( \frac{4.8 \times 10^{20}\ \text{molecules}}{1} \right) \left (\frac{1\ \text{mol}}{6.022 \times 10^{23}\ \text{molecules}} \right) \left ( \frac{2 \times 79.904\ \text{g}}{\text{mol}} \right) \left (\frac{1000\ \text{mg}}{\text{g}} \right)\\
+    &= \boxed{130\ \text{mg}} \\
+\end{align*}
+
+
+
+\newpage
+\subsection{Problem 12}
+How many sodium ions are present in each of the following:
+
+\subsubsection{(a)}
+$2$ moles of sodium phosphate $\left (\ce{Na_3(PO_4)} \right)$
+
+\begin{align*}
+    N &= \left ( \frac{2\ \text{mol \ce{Na_3(PO_4)} }}{1} \right) \left ( \frac{6.022 \times 10^{23}\ \text{molecules \ce{Na_3(PO_4)} }}{1 \text{mol \ce{Na_3(PO_4)}}} \right) \left ( \frac{3\ \text{\ce{Na^+} ions}}{1 \text{moleculue \ce{Na_3(PO_4)}}} \right) \\
+    &= \boxed{4 \times 10^{24}\ \text{ions \ce{Na^+}}}
+\end{align*}
+
+\subsubsection{(b)}
+$5.8$ grams of sodium chloride $\left ( \ce{NaCl} \right)$
+
+\noindent The molar mass is $22.990 + 35.45 = 58.44$.
+Since the coefficient of \ce{Na} is 1, the number of sodium ions is equal to the number of molecules.
+
+\begin{align*}
+    N &= \left ( \frac{5.8\ \text{g}}{1} \right) \left ( \frac{1\ \text{mol}}{58.44\ \text{g}} \right) \left ( \frac{6.022 \times 10^{23}\ \text{ions}}{1\ \text{mol}} \right) \\
+    &= \boxed{6.0\ \times 10^{22}\ \text{ions}}
+\end{align*}
+
+\subsubsection{(c)}
+A mixture containing $14.2$ grams of sodium sulfate and $2.9$ grams of sodium chloride
+
+\noindent We can find each one separately and then add them up.
+Sodium sulfate is \ce{Na_2 (SO_4)} and sodium chloride is \ce{NaCl}.
+The former's molar mass is
+
+\begin{align*}
+    2 \times 22.990 + 32.06 + 4 \times 15.999 &= 45.98 + 32.06 + 63.996 \\
+    &= 142.04 \\
+\end{align*}
+For the latter, please see part (b).
+
+\begin{align*}
+    N_1 &= \frac{14.2\ \text{g \ce{Na_2 (SO_4)}} }{\text{1}} \times \frac{1\ \text{mol \ce{Na_2 (SO_4)}}}{142.04\ \text{g \ce{Na_2 (SO_4)}}} \times \frac{6.022 \times 10^{23}\ \text{molecules \ce{Na_2 (SO_4)}}}{1\ \text{mol \ce{Na_2 (SO_4)}}} \times \frac{3\ \text{\ce{Na^+} ions}}{1\ \text{molecules \ce{Na_2 (SO_4)}}} \\
+    &= 1.81 \times 10^{23}\ \text{\ce{Na^+} ions} \\
+    N_2 &= \frac{2.9\ \text{g \ce{NaCl}} }{\text{1}} \times \frac{1\ \text{mol \ce{NaCl}}}{58.44\ \text{g \ce{NaCl}}} \times \frac{6.022 \times 10^{23}\ \text{molecules \ce{NaCl}}}{1\ \text{mol \ce{NaCl}}} \times \frac{1\ \text{\ce{Na^+} ions}}{1\ \text{molecules \ce{NaCl}}} \\
+    &= 3.0 \times 10^{22}\ \text{\ce{Na^+} ions} \\
+    N &= N_1 + N_2 \\
+    &= 18.1 \times 10^{22} + 3.0 \times 10^{22} \\
+    &= 21.1 \times 10^{22} \\
+    &= \boxed{2.11 \times 10^{23}\ \text{\ce{Na^+} ions}}
+\end{align*}
+
+\newpage
+\subsection{Problem 13}
+Determine the molar mass of \ce{KAl(SO_4)_2*12H_2O}.
+
+\begin{align*}
+    M &= 39.098 + 26.982 + 2 \left (32.06 + 4 \left (15.999 \right) \right) + 12 \left ( 2 \left (1.008 \right) + 15.999 \right) \\
+    &= 39.098 + 26.982 + 2 \cdot 32.06 + 8 \cdot 15.999 + 24 \cdot 1.008 + 12 \cdot 15.999 \\
+    &= 39.098 + 26.982 + 64.12 + 127.992 + 24.192 + 191.988 \\
+    &= \boxed{474.37\ \frac{\text{g}}{\text{mol}}}\\
+\end{align*}
+
+\newpage
+\subsection{Problem 14}
+How many moles of cadmium (II) bromide, \ce{CdBr_2} are in a $39.25$ gram sample?
+
+\noindent The molar mass is
+
+\begin{align*}
+    M &= 112.41 + 2 \cdot 79.904 \\
+    &= 112.41 + 159.808 \\
+    &= 272.218 \\
+\end{align*}
+
+\newpage
+\subsection{Problem 15}
+Bauxite, the principle ore used in the production of of aluminum cans, has a molecular formula of \ce{Al_2O_3*2H_2O}.
+
+\subsubsection{(a)}
+Determine the molar mass of bauxite.
+
+\begin{align*}
+    M &= 2 \cdot 26.982 + 5 \cdot 15.999 + 4 \cdot 1.008 \\
+    &= 53.964 + 79.995 + 4.032 \\
+    &= \boxed{137.991} \\
+\end{align*}
+
+\subsubsection{(b)}
+
+\begin{align*}
+    n &= \frac{0.58\ \text{moles bauxite}}{1} \times \frac{2\ \text{moles Al}}{1\ \text{mol bauxite}} \\
+    &= 1.2\ \text{mol Al} \\
+    m &= \frac{1.2\ \text{mol Al}}{1} \times \frac{26.982\ \text{g Al}}{1\ \text{mol Al}} \\
+    &= \boxed{32\ \text{g Al}}
+\end{align*}
+
+\subsubsection{(c)}
+
+\begin{align*}
+    N &= 1.2\ \text{mol Al} \times \frac{6.022 \times 10^{23} \text{atoms Al}}{\text{mol Al}} \\
+    &= \boxed{7.2 \times 10^{23}\ \text{atoms Al}} \\
+\end{align*}
+
+\subsubsection{(d)}
+
+\begin{align*}
+    m &= 2.1 \times 10^{24}\ \text{formula units} \times \frac{1\ \text{mol bauxite}}{6.022 \times 10^{23}\ \text{formula units }} \times \frac{137.991\ \text{g bauxite}}{1\ \text{mol bauxite}} \\
+    &= \boxed{480\ \text{g bauxite}}
+\end{align*}
+
+\newpage
+\subsection{Problem 16}
+Calculate the mass percentage of Cl in each of the following compounds:
+
+\subsubsection{(a)}
+\ce{ClF}
+
+\begin{align*}
+    100 \times \frac{35.45}{35.45 + 18.998} &= 100 \times \frac{35.45}{54.46} \\
+    &= \boxed{65.09\%} \\
+\end{align*}
+
+\subsubsection{(b)}
+\ce{HClO_2}
+
+\begin{align*}
+    100 \times \frac{35.45}{35.45 + 1.008 + 2 \cdot 15.999} &= 100 \times \frac{35.45}{35.45 + 1.008 + 31.998} \\
+    &= 100 \times \frac{35.45}{68.46} \\
+    &= \boxed{51.78\%} \\
+\end{align*}
+
+\subsubsection{(c)}
+\ce{CuCl_2}
+
+\begin{align*}
+    100 \times \frac{2 \cdot 35.45}{2 \cdot 35.45 + 63.546} &= 100 \times \frac{70.90}{134.45} \\
+    &= \boxed{52.73\%} \\
+\end{align*}
+
+\subsubsection{(d)}
+
+\ce{PuOCl}
+
+\begin{align*}
+    100 \times \frac{35.45}{244 + 35.45 + 15.999} &= 100 \times \frac{35.45}{295} \\
+    &= \boxed{12.0\%} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 17}
+Calculate the mass percentage of each element in potassium ferricyanide, \ce{K_3Fe(CN)_6}.
+The molar mass is
+
+\begin{align*}
+    M &= 3 \cdot 39.098 + 55.845 + 6 \cdot 12.011 + 6 \cdot 14.007 \\
+    &= 117.29 + 55.845 + 72.066 + 84.042 \\
+    &= 329.24 \\
+\end{align*}
+The mass percentage of each element, in order of appearance, is
+\begin{align*}
+    100 \times \frac{3 \times 39.098}{329.24} &= \boxed{35.626\%} \\
+    100 \times \frac{55.845}{329.24} &= \boxed{16.962\%} \\
+    100 \times \frac{6 \times 12.011}{329.24} &= \boxed{21.889\%} \\
+    100 \times \frac{6 \times 14.007}{329.24} &= \boxed{25.526\%} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 18}
+Calculate the mass percentage of silver in each of the following compounds:
+
+\subsubsection{(a)}
+\ce{AgCl}
+
+\begin{align*}
+    100 \times \frac{107.87}{35.45 + 107.87} &= 100 \times \frac{107.87}{143.32} \\
+    &= 75.265\% \\
+\end{align*}
+
+\subsubsection{(b)}
+\ce{AgCN}
+
+\begin{align*}
+    100 \times \frac{107.87}{107.87 + 12.011 + 14.007} &= 100 \times \frac{107.87}{133.89} \\
+    &= 80.567\% \\
+\end{align*}
+
+\subsubsection{(c)}
+\ce{AgNO_3}
+
+\begin{align*}
+    100 \times \frac{107.87}{107.87 + 14.007 + 3 \cdot 15.999} &= 100 \times \frac{107.87}{107.87 + 14.007 + 47.997} \\
+    &= 100 \times \frac{107.87}{169.87} \\
+    &= 63.502\% \\
+\end{align*}
+
+\newpage
+\subsection{Problem 19}
+\subsubsection{(a)}
+
+\begin{align*}
+    \ce{Agl} + \ce{Na_2S} &\to \ce{Ag_2S} + \ce{NaI} \\
+    2\ \ce{AgI} + \ce{Na_2S} &\to \ce{Ag_2S} + 2\ \ce{NaI} \\
+\end{align*}
+
+\subsubsection{(b)}
+
+\begin{align*}
+    \ce{(NH_4)_2Cr_2O_7} &\to \ce{Cr_2O_3} + \ce{N_2} + \ce{H_2O} \\
+    \ce{(NH_4)_2Cr_2O_7} &\to \ce{Cr_2O_3} + 2\ \ce{N_2} + 4\ \ce{H_2O} \\
+\end{align*}
+
+\subsubsection{(c)}
+
+\begin{align*}
+    \ce{Na_3PO_4} + \ce{HCl} &\to \ce{NaCl} + \ce{H_3PO_4} \\
+    \ce{Na_3PO_4} + 3\ \ce{HCl} &\to 3\ \ce{NaCl} + \ce{H_3PO_4} \\
+\end{align*}
+
+\subsubsection{(d)}
+
+\begin{align*}
+    \ce{TiCl_4} + \ce{H_2O} &\to \ce{TiO_2} + \ce{HCl} \\
+    \ce{TiCl_4} + 2\ \ce{H_2O} &\to \ce{TiO_2} + 4\ \ce{HCl} \\
+\end{align*}
+
+\subsubsection{(e)}
+
+\begin{align*}
+    \ce{Ba_3N_2} + \ce{H_2O} &\to \ce{Ba(OH)_2} + \ce{NH_3} \\
+    \ce{Ba_3N_2} + 6\ \ce{H_2O} &\to 3\ \ce{Ba(OH)_2} + 2\ \ce{NH_3} \\
+\end{align*}
+
+\subsubsection{(f)}
+
+\begin{align*}
+    \ce{HNO_2} &\to \ce{HNO_3} + \ce{NO} + \ce{H_2O} \\
+\end{align*}
+For this one, we setup a system.
+\begin{align*}
+    a\ \ce{HNO_2} &\to b\ \ce{HNO_3} + c\ \ce{NO} + d\ \ce{H_2O} \\
+\end{align*}
+
+\begin{align}
+    a &= b + 2d \\
+    a &= b + c \\
+    2a &= 3b + c + d
+\end{align}
+
+Comparing (1) and (2), we see that $c=2d$.
+Substituting into (3), we see that $2a = 3b + 3c$.
+Let $d = 1$, so $c = 2 \cdot 1 = 2$.
+Substituting, we have
+
+\begin{align*}
+    a &= b + 2 \\
+    2a &= 3b + 3 \\
+\end{align*}
+We can solve this system to get $(a, b) = (3, 1)$.
+Finally,
+\begin{align*}
+    3\ \ce{HNO_2} &\to  \ce{HNO_3} + 2\ \ce{NO} + \ce{H_2O} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 20}
+Balance the following equation:
+\begin{align*}
+    \ce{NH_4OH}\ (\ell) + \ce{KAl(SO_4)_2*12H_2O} &\to \ce{Al(OH)_3}\ (s) + \ce{(NH_4)_2(SO_4)} + \ce{KOH}\ (aq) + \ce{H_2O}\ (\ell) \\
+    4\ \ce{NH_4OH}\ (\ell) + \ce{KAl(SO_4)_2*12H_2O} &\to \ce{Al(OH)_3}\ (s) + 2\ \ce{(NH_4)_2(SO_4)} + \ce{KOH}\ (aq) + 12\ \ce{H_2O}\ (\ell) \\
+\end{align*}
+
+\newpage
+\subsection{Problem 21}
+Balance the following equation:
+\begin{align*}
+    \ce{Fe}\ (s) + \ce{HC_2H_3O_2}\ (aq) &\to \ce{Fe(C_2H_3O_2)}\ (aq) + \ce{H_2}\ (g) \\
+    2\ \ce{Fe}\ (s) + 2\ \ce{HC_2H_3O_2}\ (aq) &\to 2\ \ce{Fe(C_2H_3O_2)}\ (aq) + \ce{H_2}\ (g) \\
+\end{align*}
+
+\newpage
+\subsection{Problem 22}
+How many grams of sodium hydroxide are required to form $51.63$ grams of lead hydroxide?
+
+\begin{align*}
+    \ce{Pb(NO_3)_2} + \ce{NaOH} &\to \ce{Pb(OH)_2} + \ce{NaNO_3} \\
+    2\ \ce{Pb(NO_3)_2} + 6\ \ce{NaOH} &\to 3\ \ce{Pb(OH)_2} + 6\ \ce{NaNO_3} \\
+\end{align*}
+We first find the molar mass of each compound.
+
+\begin{align*}
+    M_{\ce{Pb(OH)_2}} &= 207.2 + 2 \cdot 1.008 + 2 \cdot 15.999 \\
+    &= 207.2 + 2.016 + 31.998 \\
+    &= 241.2 \\
+\end{align*}
+
+\begin{align*}
+    M_{\ce{NaOH}} &= 22.990 + 15.999 + 1.008 \\
+    &= 39.997 \\
+\end{align*}
+
+Finally,
+
+\begin{align*}
+    m_{\ce{NaOH}} &= 51.63\ \text{g \ce{Pb(OH)_2}} \times \frac{1\ \text{mol \ce{Pb(OH)_2}}}{241.2\ \text{g \ce{Pb(OH)_2}}} \times \frac{6\ \text{mol \ce{NaOH}}}{3\ \text{mol \ce{Pb(OH)_2}}} \times \frac{39.997\ \text{g \ce{NaOH}}}{1\ \text{mol \ce{NaOH}}} \\
+    &= \boxed{17.12\ \text{g \ce{NaOH}}}
+\end{align*}
+
+\newpage
+\subsection{Problem 23}
+How may grams of water vapor can be generated from the combustion of $18.74$ grams of ethanol?
+
+\begin{align*}
+    \ce{C_2H_6O} + \ce{O_2} &\to \ce{C_2O} + \ce{H_2O} \\
+     \ce{C_2H_5O} + \ce{O_2} &\to \ce{C_2O} + 3\ \ce{H_2O} \\
+\end{align*}
+
+Next, we compute the molar mass of ethanol and water vapor:
+
+\begin{align*}
+    M_{\ce{C_2H_6O}} &= 2 \cdot 12.011 + 6 \cdot 1.008 + 15.999 \\
+    &= 12.011 + 6.048 + 15.999 \\
+    &= 34.058 \\
+    M_{\ce{H_2O}} &= 2 \cdot 1.008 + 15.999 \\
+    &= 1.016 + 15.999 \\
+    &= 17.015 \\
+\end{align*}
+
+\begin{align*}
+    m_{\ce{H_2O}} &= 18.74\ \text{g \ce{C_2H_6O}} \times \frac{1\ \text{mol \ce{C_2H_6O}}}{34.058\ \text{g \ce{C_2H_6O}} } \times \frac{3\ \text{mol\ \ce{H_2O}}}{1\ \text{mol \ce{C_2H_6O}}} \times \frac{17.015\ \text{g \ce{H_2O}}}{1\ \text{mol \ce{H_2O}}} \\
+    &= \boxed{28.09\ \text{g \ce{H_2O}}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 24}
+How many grams of potassium iodide are necessary to completely react with 20.61 g of mercury (II) chloride?
+
+\begin{align*}
+    \ce{HgCl_2} + \ce{KI} &\to \ce{HgI_2} + \ce{KCl} \\
+    \ce{HgCl_2} + 2\ \ce{KI} &\to \ce{HgI_2} + 2\ \ce{KCl} \\
+\end{align*}
+
+\noindent The molar mass of potassium iodide is $39.098 + 126.90 = 166.00$, while the molar mass of mercury (II) chloride is $2 \cdot 35.45 + 200.59 = 70.90 + 200.59 = 271.49$.
+
+\begin{align*}
+    m_{\ce{KI}} &= 20.61\ \text{g \ce{HgCl_2}} \times \frac{1\ \text{mol \ce{HgCl_2}}}{271.49\ \text{g \ce{HgCl_2}}} \times \frac{2\ \text{mol \ce{KI}}}{1\ \text{mol \ce{HgCl_2}}} \times \frac{166.00\ \text{g \ce{KI}}}{1\ \text{mol \ce{KI}}} \\
+    &= \boxed{25.20\ \text{g \ce{KI}}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 25}
+How many grams of oxygen are required to completely react with 22.8 grams of methane, \ce{CH_4}.
+
+\begin{align*}
+    \ce{CH_4} + \ce{O_2} &\to \ce{CO_2} + \ce{H_2O} \\
+    \ce{CH_4} + 2\ \ce{O_2} &\to \ce{CO_2} + 2\ \ce{H_2O} \\
+\end{align*}
+The molar masses of methane and diatomic oxygen gas are, respectively,
+\begin{align*}
+    M_{\ce{CH_4}} &= 12.011 + 4 \cdot 1.008 \\
+    &= 12.011 + 4.032 \\
+    &= 16.043 \\
+    M_{\ce{O_2}} &= 2 \cdot 15.999 \\
+    &= 31.998 \\
+\end{align*}
+We can now compute:
+\begin{align*}
+    m_{\ce{O_2}}&= 22.8\ \text{g \ce{CH_4}} \times \frac{1\ \text{mol \ce{CH_4}}}{16.043\ \text{g \ce{CH_4} }} \times \frac{2\ \text{mol \ce{O_2}}}{1\ \text{mol \ce{CH_4}}} \times \frac{31.998\ \text{g \ce{O_2}}}{1 \text{mol \ce{O_2}}} \\
+    &= \boxed{90\ \text{g \ce{O_2}}} \\
+\end{align*}
+
+
+\subsection{Problem 26}
+If, in the previous problem, only $25.9$ grams of water vapor were formed, how many grams of methane actually reacted with oxygen?
+
+\noindent We first find the molar mass of water vapor:
+
+\begin{align*}
+    M_{\ce{H_2O}} &= 2 \cdot 1.008 + 15.999 \\
+    &= 1.016 + 15.999 \\
+    &= 17.015 \\
+\end{align*}
+
+\noindent Now, we can compute:
+\begin{align*}
+    m_{\ce{CH_4}} &= 25.9\ \text{g \ce{H_2O}} \times \frac{1\ \text{mol \ce{H_2O}}}{17.015\ \text{g \ce{H_2O}}} \times \frac{1\ \text{mol \ce{CH_4}}}{2\ \text{mol \ce{H_2O}}} \times \frac{16.043\ \text{g \ce{CH_4}}}{1\ \text{mol \ce{CH_4}}}\\
+    &= \boxed{12.2\ \text{g \ce{CH_4}}}
+\end{align*}
+
+\newpage
+\subsection{Problem 27}
+What mass of calcium carbonate, \ce{CaCO_3}, would be formed if $248.6$ grams of carbon dioxide, \ce{CO_2}, were exhaled into limewater, \ce{Ca(OH)_2}?
+How many grams of calcium would be needed to form that amount of calcium carbonate?
+Assume 100\% yield in each reaction.
+\subsubsection{(a)}
+\begin{align*}
+    \ce{Ca(OH)_2} + \ce{CO_2} &\to \ce{CaCO_3} + \ce{H_2O} \\
+\end{align*}
+This is balanced already, so we don't need to do anything in that regard.
+However, we still need to find the atomic masses.
+
+
+\begin{align*}
+    M_{\ce{CO_2}} &= 12.011 + 2 \cdot 15.999 \\
+    &= 12.011 + 31.998 \\
+    &= 44.009 \\
+    M_{\ce{CaCO_3}} &= 12.011 + 40.078 + 3 \cdot 15.999 \\
+    &= 12.011 + 40.078 + 47.997 \\
+    &= 100.086 \\
+    m_{\ce{CO_2}} &= 248.6\ \text{g \ce{CO_2}} \times \frac{1\ \text{mol \ce{CO_2}}}{44.009\ \text{g \ce{CO_2}}} \times \frac{1\ \text{mol \ce{CaCO_3}}}{1\ \text{mol \ce{CO_2}}} \times \frac{100.086\ \text{g \ce{CaCO_3}}}{1\ \text{mol \ce{CaCO_3}}} \\
+    &= \boxed{565.4\ \text{g \ce{CaCO_3}}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 28}
+The following reaction is used to form lead iodide crystals. What mass of crystal $\left (\ce{PbI_2} \right)$ could be formed from $1.0 \times 10^{3}$ grams of lead (II) acetate $\left [ \ce{Pb(C_2H_3O_2)_2} \right]$?
+\begin{align*}
+    \ce{Pb(C_2H_3O_2)_2} + 2\ \ce{KI} &\to \ce{PbI_2} + 2\ \ce{KC_2H_3O_2} \\
+\end{align*}
+We find the atomic masses of each compound and compute:
+\begin{align*}
+    M_{\ce{Pb(C_2H_3O_2)_2}} &= 207.2 + 4 \cdot 12.011 +  6 \cdot 1.008 + 4 \cdot 15.999 \\
+    &= 207.2 + 48.044 + 6.048 + 63.996 \\
+    &= 319.2 \\
+    M_{\ce{PbI_2}} &= 207.2 + 2\cdot 126.9045 \\
+    &= 207.2 + 253.8090 \\
+    &= 461.0 \\
+    m_{\ce{PbI_2}} &= 1.0 \times 10^{3}\ \text{g \ce{Pb(C_2H_3O_2)_2}} \times \frac{1\ \text{mol \ce{Pb(C_2H_3O_2)_2}}}{319.2\ \text{g \ce{Pb(C_2H_3O_2)_2}}} \times \frac{1\ \text{mol \ce{PbI_2}}}{1\ \text{mol \ce{Pb(C_2H_3O_2)_2}} } \times \frac{461.0\ \text{g \ce{PbI_2}}}{1\ \text{mol \ce{PbI_2}} } \\
+    &= \boxed{1400\ \text{g \ce{PbI_2}}} \\
+\end{align*}
+
+\newpage
+\subsection{Problem 29}
+You were hired by a laboratory to recycle $6$ moles of silver ions.
+You were given $150.$ grams of copper.
+How many grams of silver can you recover using the following reaction?
+Is this enough copper to recycle $6$ moles of silver ions?
+
+\begin{align*}
+    2\ \ce{Ag^+} + \ce{Cu} &\to 2\ \ce{Ag} + \ce{Cu^+} \\
+\end{align*}
+
+\noindent We compute:
+\begin{align*}
+    n_{\ce{Ag}} &= 150.\ \text{g \ce{Cu}} \times \frac{1\ \text{mol \ce{Cu}}}{63.546\ \text{g \ce{Cu}}} \times \frac{2\ \text{mol \ce{Ag}}}{1\ \text{mol \ce{Cu}}} \\
+    &= \boxed{4.72\ \text{mol \ce{Ag}}} \\
+\end{align*}
+
+We can convert this into grams by multiplying by the molar mass.
+\begin{align*}
+    m_{\ce{Ag}} &= 4.72\ \text{mol \ce{Ag}} \times \frac{107.8682\ \text{g \ce{Ag}}}{1\ \text{mol \ce{Ag}}} \\
+    &= \boxed{509\ \text{g \ce{Ag}}} \\
+\end{align*}
+
+
+
+\newpage
+\subsection{Problem 30}
+If 42.7 grams \ce{Cr_2O_3} and 9.8 grams of \ce{Al} are mixed and reacted until one of the reactants is used via a single replacement reaction.
+
+\subsubsection{(a)}
+Which reactant is the limiting reagent and which is in excess?
+
+\noindent First we find the equation and balance it:
+\begin{align*}
+    \ce{Cr_2O_3} + \ce{Al} &\to \ce{Al_2O_3} + \ce{Cr} \\
+    \ce{Cr_2O_3} + 2\ \ce{Al} &\to \ce{Al_2O_3} + 2\ \ce{Cr} \\
+\end{align*}
+
+\noindent Next, we must find the molar mass of \ce{Cr_2O_3}:
+\begin{align*}
+    M_{\ce{Cr_2O_3}} &= 2 \cdot 51.9961 + 3 \cdot 15.999 \\
+    &= 103.992 + 47.997 \\
+    &= 151.989 \\
+\end{align*}
+
+\noindent Next, we must find the number of moles of each that will form:
+\begin{align*}
+    n_{\ce{Cr_2O_3}} &= \frac{42.7\ \text{g \ce{Cr_3O_3}}}{\frac{151.989\ \text{g \ce{Cr_2O_3}}}{1\ \text{mol \ce{Cr_2O_3}}}} \\
+    &= 0.276\ \text{mol \ce{Cr_2O_3}} \\
+    n_{\ce{Al}} &= \frac{9.8\ \text{g \ce{Al}}}{\frac{26.98154\ \text{g \ce{Al}}}{1\ \text{mol \ce{Al}}}} \\
+    &= 0.36\ \text{mol \ce{Al}} \\
+\end{align*}
+Because of the 1:2 molar ratio between the chromium (III) oxide and the aluminum, we can see that the aluminum is the limiting reagent and the chromium (III) oxide is in excess.
+
+\subsubsection{(b)}
+How many grams of chromium will be formed?
+
+\begin{align*}
+    m_{\ce{Cr}} &= 0.36\ \text{mol \ce{Al}} \times \frac{1 \ \text{mol \ce{Cr}} }{1\ \text{mol \ce{Al}}} \times \frac{51.9961\ \text{g \ce{Cr}}}{1\ \text{mol \ce{Cr}}} \\
+    &= \boxed{19\ \text{g \ce{Cr}}} \\
+\end{align*}
+
+
+\subsubsection{(c)}
+How much excess reactant will be left?
+
+\noindent We can calculate the moles of chromium (III) oxide used by simply halving the number of moles of aluminum used, so this will be $n_{\ce{Cr_2O_3}} = 0.5 \cdot 0.36 = 0.18 \text{mol \ce{Al}}$.
+This means that $0.276-0.18 = \boxed{0.10}$ moles of the chromium are unused.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
